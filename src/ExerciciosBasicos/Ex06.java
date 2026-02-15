@@ -1,4 +1,4 @@
-package ExerciciosSimples;
+package ExerciciosBasicos;
 
 public class Ex06 {
 
