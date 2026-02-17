@@ -18,5 +18,12 @@ public class Ex15 {
             System.out.println("Valor de I: " + i);
             i++;
         } while (i < 10);
+
+        for (int ii=0; ii<10; ii++){
+
+            if(ii==5){continue;}
+            System.out.println("Valor de I: " + ii);
+        }
     }
+
 }
