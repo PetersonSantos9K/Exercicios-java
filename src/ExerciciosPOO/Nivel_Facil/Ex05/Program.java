@@ -103,7 +103,7 @@ public class Program {
         System.out.println("Digite o numero da conta que deseja acessar: ");
         int numeroConta = sc.nextInt();
 
-        Conta contaAcessada = null;
+        Conta contaAcessada = null ;
         boolean verificarConta = false;
         for(int i=0; i<contas.size(); i++){
 
