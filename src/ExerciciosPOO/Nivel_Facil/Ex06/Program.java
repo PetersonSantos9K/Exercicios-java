@@ -21,6 +21,7 @@ public class Program {
         for (PersonagemDBZ personagemDBZ : personagemDBZS)  {
             personagemDBZ.transformar();;
             personagemDBZ .lutar();
+
         }
 
 

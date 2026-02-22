@@ -61,8 +61,8 @@ public class Conta {
         return getSaldoAtual();
     }
 
-
-    public String toSting(){
+    @Override
+    public String toString(){
         return String.format("\nTipo da conta: %s\nNome do cliente: %s\nNumero da conta: %d\n", getTipoDaConta().name(), getNomeCliente(), getNumeroConta());
     }
 }

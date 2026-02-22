@@ -18,7 +18,7 @@ public class Program {
         adicionarContas(sc, contas);
 
         for(Conta conta : contas){
-            System.out.println(conta.toSting());
+            System.out.println(conta.toString());
         }
 
         boolean addConta = true;
@@ -121,7 +121,7 @@ public class Program {
 
         // conta acessada, numero correto.
         System.out.println("Conta acessada com sucesso.");
-        System.out.println(contaAcessada.toSting());
+        System.out.println(contaAcessada.toString());
 
         System.out.println("Saldo atual: " + contaAcessada.saldoAtual());
 
