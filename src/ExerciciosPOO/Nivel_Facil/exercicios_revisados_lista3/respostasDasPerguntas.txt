@@ -1,0 +1,77 @@
+1- O que é um método construtor?
+  -> O método construtor é fundamental para o polimorfismo.
+  -> Ele é utlizado para definir uma estruta com ou sem atributos, que devem ser seguidas ao ser instanciada.
+  -> Esses atributos vão ser atribuidos no momento de instanciar a classe.
+
+2- Quando uma classe é instanciada (new) qual é o primeiro método a ser executado por padrão (default)?
+   -> O construtor é o primeiro método a ser executado por padrão, podemos definir o construtor com outros atributos
+      ou utilizar o construtor default, que é aquele sem atributos.
+
+3- Para que serve a palavra reservada “this”? Cite um exemplo de sua utilização. (Converse com os integrantes da equipe)
+   -> A palavra THIS serve para falarmos do próprio objeto
+   -> Ela é utilizada geralmente para falarmos com os atributos do objeto que estão foram atribuidos globalmente na classe.
+   -> Exemplo:
+        public class Pessoa {
+            private String nome;
+            private int idade;
+
+            public Pessoa(String nome, int idade) {
+                this.nome = nome; // O "this" se refere ao atributo "nome" da classe
+                this.idade = idade; // O "this" se refere ao atributo "idade" da classe
+            }
+        }
+
+4- Qual é a palavra reservada do Java utilizado para aplicar o conceito de herança, como por exemplo, definir que um pássaro “é um” animal.
+   -> A palavra utilizada é EXTENDS, ela é utilizada pra definir que uma subclass é uam extensão de uam superclasse.
+
+5- Entre as classes Passaro e Animal, quem é a superclasse e quem é a subclasse?
+    -> Passaro é a subclasse, pois ela é uma extensão da classe anima, que é uma superclasse.
+
+6- Aponte qual é o erro existente na implementação abaixo, o que voçe faria para resolver esse problema ?
+
+     public class Veiculo{
+      public void moverVeiculo(){
+        System.out.println("O veiculo está se movendo");
+      }
+     }
+
+     public class Motocicleta{
+      public void estacionar(){
+        System.out.println("A motocicleta está estacionada");
+      }
+     }
+
+     public class TestarVeiculo{
+      public static void main(String[] args) {
+       Motocicleta moto = new Motocicleta();
+        moto.moverVeiculo(); //
+        moto.estacionar();
+      }
+     }
+
+    R -> A classe motocicleta não tem acesso ao método moverveiculo, pois ela não extende a classe veiculo, para resolver esse problema seria necessario ir
+         na classe motocicleta e colocar a palavra extends Veiculo, a parti disso ela se tornaria uma subclasse da classe veiculo e teria acesso ao métod
+         moverveiculo.
+
+7- Tendo como referência as classes implementadas no item 6, explique o código abaixo está ou não correto. Por que?
+
+    public class TesteVeiculo{
+     public static void main(String[] args) {
+       Veiculo vei = new Veiculo();
+       vei.estacionar();
+      }
+     }
+
+     R -> A classe Veiculo não tem implementado o método estacionar, ele está implementado somente na subclase motocicleta, para resolver esse problema
+          teriamos 2 maneiras, a primeira seria criar um método na classe veiculo chamado estacionar, e em suas subclasses sobreescreve-lo, já na
+          segunda maneira seria em instanciar uma Motocicleta ou outra subclasse de veiculo, que tivesse o método estacionar implementado.
+
+8- Explique quando utilizar os modificadores de acesso public, private e protected. Cite quais são as notações UML utilizadas para cada um deles.
+
+   Public: É utilizado para definir um atributo ou método que pode ser acessado por qualquer classe.
+   Private: É utilizado para definir atributos ou métodos que só podem ser acessado dentro da propria classe.
+   Protected: É utilizado para definir métodos que só podem ser utilizados por outras classes que estão no mesmo pacote ou por subclasses.
+
+9- Explique para que serve a palavra reservada super.
+ -> A palavra reservada SUPER é utilizada para falarmos diretamente com a superclasse, ela é utilizada para acessar métodos ou atributos da superclasse.
+ -> Podemos também utilizar a palavra super para passar alguns atributos para o construtor da superclasse.
