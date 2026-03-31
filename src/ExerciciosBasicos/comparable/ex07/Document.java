@@ -21,7 +21,7 @@ public class Document implements Comparable<Document>{
     @Override
     public int compareTo(Document o) {
 
-        String t1 = this.getTitle();
+        String t1 = this.title;
         String t2 = o.getTitle();
 
         if(t1.equals(t2)) return 0;
