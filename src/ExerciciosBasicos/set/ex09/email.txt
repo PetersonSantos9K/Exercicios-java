@@ -1,0 +1,10 @@
+ana.silva@example.com
+bruno.costa@example.com
+carla.mendes@example.com
+diego.alves@example.com
+elaine.rocha@example.com
+felipe.gomes@example.com
+ana.silva@example.com
+carla.mendes@example.com
+felipe.gomes@example.com
+gustavo.lima@example.com

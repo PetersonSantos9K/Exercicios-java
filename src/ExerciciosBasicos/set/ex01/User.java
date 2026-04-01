@@ -1,7 +1,6 @@
-package ExerciciosBasicos.set;
+package ExerciciosBasicos.set.ex01;
 
 import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 import java.util.Objects;
 
 public class User implements Comparable<User>{
