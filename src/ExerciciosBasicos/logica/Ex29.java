@@ -1,12 +1,12 @@
-package ExerciciosBasicos.set.ex13;
+package ExerciciosBasicos.logica;
 
 import java.util.Set;
 import java.util.TreeSet;
 
-public class Program {
+public class Ex29 {
+
 
     void main(){
-
         Set<Integer> numbers = new TreeSet<>();
 
         numbers.add(1);
@@ -33,4 +33,6 @@ public class Program {
             IO.println(number);
         }
     }
+
+
 }
